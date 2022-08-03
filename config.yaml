@@ -1,0 +1,208 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "NR Shyamsundar Iyanger"
+theme: hugo-theme
+
+Paginate: 3
+disqusShortname: shyamsundar
+googleAnalytics: G-DWJJVE27WD
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    
+
+params:
+  title: "N R S S I"
+  description: A portfolio website and also a blog site.
+  # staticPath: ""  # The path to serve the static files from
+  # favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  theme:
+    disableThemeToggle: false
+    defaultTheme: "dark"
+
+  # If you want to customize the menu, you can change it here
+  # navbar:
+  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+  #   brandName: "Profile" # Brand name for the brand | default is the title variable
+
+  #   menus:
+  #     disableAbout: true
+  #     disableExperience: true
+  #     disableEducation: true
+  #     disableProjects: true
+  #     disableAchievements: true
+  #     disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "N R Shyamsundar Iyanger"
+    subtitle: "Bugs ? Clear() : Rock();"
+    content: "A passionate programmer, a free and open source enthusiast mainly focusing on system programming and problem solving."
+    #image: /images/hero.svg
+    button:
+      enable: true
+      name: "Resume"
+      url: shyam's resume.pdf
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/nrssi
+        - icon: fab fa-linkedin
+          url: https://linkedin.com/in/nrssi
+        - icon: fa fa-envelope
+          url: mailto:nrshyamsundariyanger@gmail.com
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    # image: "/images/me.png"
+    content: |-
+      I am a software developer with a passion for desktop application development and python scripting. I have a background in computer science and engineering, and I am heavily interested in problem solving and scripting languages like python, bash-scripting etc. I am currently studying in [SDMIT](https://sdmit.in) in Ujire, Dakshina Kannada. 
+
+      I am currently working on a project that simulates the working of bezeir curves.
+    skills:
+      enable: true
+      title: "Here are a few languages that I'm fluent in :"
+      items:
+        - "Python"
+        - "C/C++"
+        - "Rust"
+        - "Shell scripting"
+        - "Basic Java"
+        - "HTML"
+        - "CSS"
+
+  # Education
+  education:
+    enable: true
+    # index: true
+    items:
+      - title: "Bachelors of Computer Science and Engineering"
+        school:
+          name: "SDM Institute of Technology, Ujire"
+          url: "https://sdmit.in"
+        date: "2019 - present"
+        GPA: "8.09 out of 10 till (5th sem)"
+        content: |-
+          Completed 3 Mini projects that are required by the University for awarding the degree.
+          Currently working on the final project.  
+
+          Extracurricular Activities
+            - Participated in cultural fest held at our college and won several prizes
+            - An active member of the volleyball club of SDMIT
+            - An active member of youth redcross organization at SDMIT
+      - title: "Pre-Universite Course"
+        school:
+          name: "Shaantinikethan PU college, Chikkaballapur"
+        date: "2017 - 2019"
+        content: |-
+          percentage: 91.13%  
+
+          Created an introductory application for object oriented concepts and also involved myself in creating a strong base 
+          for programming.
+
+          Extracurricular Activities
+            - Participated in state level throw-ball events for 2 consecutive years
+            - Participated in cultural fests and performed as a singer
+      - title: "High School"
+        school:
+          name: "JSS English Medium High School, Gangawathi"
+        date: "2016-2017"
+        content: |-
+          percentage: 92%
+
+          Competed in several technical and cultural events at various fests, also maintaining a friendly relationship with my competitors
+
+
+
+  # Achievements
+  achievements:
+    enable: true
+    items:
+      - title: Insignia-2k22 Night Coding
+        content: Collaboratively created an archive application prototype and won second place. 
+      - title: AccelTHON 3.0
+        content: Pitched a prototype plan for market analysis and created it.
+
+  # projects
+  projects:
+    enable: true
+    items:
+      - title: Image Encryption using Steganography
+        content: A multi-interface based project which deals with embedding secret messages into Images without disrupting their original look.
+        image: /python-logo.png
+        links:
+          - icon: fa fa-envelope
+            url: mailto:nrshyamsundariyanger@gmail.com
+          - icon: fab fa-github
+            url: https://github.com/nrssi/image-encryptor/
+
+      - title: Simulation of Linear Probing in Hashmaps
+        content: A  Desktop application to simulate and show the working of linear probing on a static Hashmap.
+        image: /cpp-logo.png
+        links:
+          - icon: fa fa-envelope
+            url: mailto:nrshyamsundariyanger@gmail.com
+          - icon: fab fa-github
+            url: https://github.com/nrssi/vigilant-train/
+
+      - title: RC
+        content: A CLI Record keeper to keep track of your expenses
+        image: /rust-logo.png
+        links:
+          - icon: fa fa-envelope
+            url: mailto:nrshyamsundariyanger@gmail.com
+          - icon: fab fa-github
+            url: https://github.com/nrssi/rc/
+
+      - title: Sharingan
+        content: A personal journal keeper written in rust for terminal dwellers.
+        image: /rust-logo.png
+        links:
+          - icon: fa fa-envelope
+            url: mailto:nrshyamsundariyanger@gmail.com
+          - icon: fab fa-github
+            url: https://github.com/nrssi/sharingan/
+              
+      - title: Telecommunication Database Management System
+        content: A Telecommunication database management system built on top of LAMP stack
+        image: /html-logo.png
+        links:
+          - icon: fa fa-envelope
+            url: mailto:nrshyamsundariyanger@gmail.com
+          - icon: fab fa-github
+            url: https://github.com/nrssi/dbm/
+
+  #Contact
+  contact:
+    enable: true
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: nrshyamsundariyanger@gmail.com
+    btnName: Mail me
+
+  footer:
+    recentPosts: true
+    socialNetworks:
+      github: https://github.com/nrssi
+      linkedin: https://linkedin.com/in/nrssi
+      instagram: https://instagram.com/n_r_s_s_i
